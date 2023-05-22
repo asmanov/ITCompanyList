@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace ITCompanyList
@@ -15,11 +9,19 @@ namespace ITCompanyList
         public AdminForm()
         {
             InitializeComponent();
+            
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void AdminForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'ukrITCompanyDBDataSet.ITCompany' table. You can move, or remove it, as needed.
+            this.iTCompanyTableAdapter.Fill(this.ukrITCompanyDBDataSet.ITCompany);
+        }
 
+        private void AdminForm_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
+        {
+            this.iTCompanyTableAdapter.Update(this.ukrITCompanyDBDataSet.ITCompany);
+            
         }
     }
 }

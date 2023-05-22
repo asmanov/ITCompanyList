@@ -54,7 +54,7 @@
             this.LoginLabel.ForeColor = System.Drawing.Color.Blue;
             this.LoginLabel.Location = new System.Drawing.Point(194, 120);
             this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(94, 36);
+            this.LoginLabel.Size = new System.Drawing.Size(75, 29);
             this.LoginLabel.TabIndex = 1;
             this.LoginLabel.Text = "Login";
             // 
@@ -73,7 +73,7 @@
             this.passwordLabel.ForeColor = System.Drawing.Color.Blue;
             this.passwordLabel.Location = new System.Drawing.Point(196, 245);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(155, 36);
+            this.passwordLabel.Size = new System.Drawing.Size(124, 29);
             this.passwordLabel.TabIndex = 4;
             this.passwordLabel.Text = "Password";
             // 
@@ -88,6 +88,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Log in";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
