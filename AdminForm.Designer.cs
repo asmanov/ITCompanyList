@@ -62,7 +62,7 @@ namespace ITCompanyList
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(933, 627);
+            this.dataGridView1.Size = new System.Drawing.Size(922, 519);
             this.dataGridView1.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
